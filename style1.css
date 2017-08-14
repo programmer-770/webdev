@@ -1,0 +1,290 @@
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.carousel .item {
+  height: 280px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 280px;
+}
+.new
+{
+margin-top:100px;}
+#second{
+	margin-top:30px;
+color:red;
+width:75%;}
+#third{
+	margin-top:30px;
+width:75%;}
+#first{
+	margin-top:30px;
+}
+.image{
+width:320px;height:228px;    margin-left: 25px;
+}
+.leftContainer {
+   float:left;
+}
+
+#leftyContainer {
+   float:left;
+   margin-top: 15px;
+}
+ul.tabs {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #F0F0F0;
+	width: 440px;
+	 border: 1px solid 	#DCDCDC;
+  box-shadow:  0 3px 0px 0 rgba(0,0,0,0.2), 0 3px 0px 0 rgba(0,0,0,0.19);
+	
+}
+
+li {
+    float: left;
+}
+.after-box {
+    clear: both;
+}
+li a.wasd {
+    display: block;
+    color: #ff1493;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+	border-left: 1px solid #DCDCDC;
+}
+li a:hover.wasd {
+    background-color: #ffffff;
+	color: #000000
+}
+a:link.linker {
+    color: #008ae6; 
+    background-color: transparent; 
+    text-decoration: dotted;
+	text-decoration: none;
+	border-bottom: 1.5px dotted;
+}
+
+a:visited.linker {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+	
+}
+
+a:hover.linker {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+	border-bottom: none;
+}
+
+a:active.linker {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.right{
+float:right;
+width: 40%;
+}
+h1 {
+    color: #4d9900;
+    font-size: 300%;
+	font-family: Arial Narrow;
+	margin-bottom: 0px;
+	font-weight:normal;
+
+}
+h2#hon {
+    color: #006600;
+	font-family: Arial Narrow;
+	margin-top: 0px;
+	font-weight:normal;
+
+}
+
+body {
+  font-family: Arial Narrow;
+  }
+  textarea:focus, input:focus{
+    outline: none;
+}
+input.mem {
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+	box-shadow: inset 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+input[type=text].mem2 {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+	box-shadow: inset 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+input[type=text].zip{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+	box-shadow: inset 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+input[type=date] {
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+	box-shadow: inset 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+.rower{
+padding-top:30px;
+}
+.ball1{
+width :60%;
+display:inline-block;
+float:left;
+}
+.ball2{
+width :35%;
+display:inline-block;
+float:right;
+}
+.column1{
+width:60%;
+display:inline-block;
+float:left;
+}
+.column2{
+width:100%;
+display:inline-block;
+float:left;
+}
+form{
+padding-top:12px;}
+p{
+font-size:110%;}
+
+
+* {box-sizing:border-box}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-right: 24px;
+    margin-left: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 30px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+div.width{
+	width:35%;
+	float: right;
+}
