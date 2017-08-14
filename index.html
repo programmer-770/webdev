@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<script src="script1.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                   <a class="navbar-brand" rel="home" href="http://bits-pilani.ac.in/" title="BITS PILANI">
+        <img style="max-width:45px; margin-top: -10px;"
+             src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/BITS_Pilani-Logo.svg/1024px-BITS_Pilani-Logo.svg.png">
+    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						<li><a href="contact.php"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+						<li><a href="home.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		<div class="container">
+<div class="row">
+<div class="rower">
+ <div class=" col-md-8">
+ <h1>Registration</h1>
+ <h2 id="hon">Student Information</h2>
+ <p>Enter your identifying information to access BITSInfo, where you can <br>find coverage items, claims and more.</p>
+ </div>
+<div class=" col-md-4 rower">
+ <span style="font-family: Brush Script MT;font-weight:normal;font-size:200%">Already Registered</span>
+&nbsp; <a href  = "signin.aspx"  style="color: #ff1493; font-size:125%;">Sign in</a><br><br>
+<a href = "not.aspx">Not a member? </a>
+<p>New Go365<sup>TM</sup> member? <a href = "signgo.aspx">Sign in to Go365</a> to get<br> started </p>
+</div>
+</div> 
+</div>
+<div class="rower row">
+ <div class="col-md-12">
+
+ <p class="after-box"><span style="color: green; font-size:30px">*</span>All fields are required. </p>
+ <div>
+<ul class="tabs nav nav-tabs" style="border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; border-top-right-radius: 30px">
+  <li style="width: 30%;"><a href="#ph" class="wasd tabs" id = "defaultOpen" style="border-bottom: none;" onclick="openTab(event, 'first')">FORM</a></li>
+  <li style="width: 30%;"><a href="#sw" class="wasd tabs" style="border-bottom: none;" onclick="openTab(event, 'second')">TEXT</a></li>
+  <li style="width: 40%;"><a href="#nav" class="wasd tabs" style="border-bottom: none;" onclick="openTab(event, 'third')">FORM+TEXT</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!--<form action="/action_page.php" class="form-inline">
+<div id="first" class="tabContent">
+<div class="leftContainer">
+<div class="leftContainer"><span style="color: green; font-size:30px">*</span><b>Member ID number</b><br>
+    <input type="text" name="midn" id="Memid" class="mem">
+	</div>
+	<div class="leftContainer" style="padding: 35px 35px 30px 47px;"><br>or
+	</div>
+	&nbsp;
+    <div id="leftyContainer"> <b>Medicare Claim Number</b><br>
+    <input type="text" name="mcn" id="medcn" class="mem"></div>
+	</div>
+    <br><br>
+	--> 
+	<div id="first" class="tabContent">
+	 <form class="form-inline" action="/action_page.php">
+	 
+    <div class="form-group ">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control mem" id="name" placeholder="Enter your Name" name="name">
+    </div>
+	<div class="form-group ">
+     <p>&nbsp;</p>
+    </div>
+	 <div class="form-group ">
+      <label for="pwd">ID:</label>
+      <input type="text" class="form-control mem" id="pwd" placeholder="Enter BITS ID" name="pwd">
+    </div>
+	</form>
+	<form>
+	 <div class="form-group  col-md-12">
+     <span style="color: green; font-size:30px">*</span><b><label for="Date of Birth">Date of Birth</label></b><br>
+    <input type="date" name="dob" id="Date of Birth"></div> 
+	<div class="form-group col-md-12">
+      <span style="color: green; font-size:30px">*</span><b><label for="Zip Code">Room:</label></b><br>
+    <input type="text" name="zip" id="Zip Code" class="zip"  placeholder="Enter Room no.">
+    </div>
+	</form>
+	</div>
+	<!--<span style="color: green; font-size:30px">*</span><b><label for="Date of Birth">Date of Birth</label></b><br>
+    <input type="date" name="dob" id="Date of Birth"></div> 
+    <br>
+	<div>
+    <span style="color: green; font-size:30px">*</span><b><label for="Zip Code">Zip Code</label></b><br>
+    <input type="text" name="zip" id="Zip Code" class="zip">
+    <br><br>
+	</div>-->
+	<div id="second" class="tabContent">
+	<div class="row">
+	<div class="col-md-9">
+	<p style="color:red;"> The pursuit of excellence requires a transparent and honest approach. At BITS Pilani, we have always believed this to be true and are one of the few top institutes in India to favour a ‘Merit Only’ based admission policy.<br>
+
+To ensure complete transparency in student intake in the undergraduate courses we have instituted BITSAT, a fully online exam. BITSAT tests students on their aptitude for Mathematics, Physics and Chemistry. BITSAT also has a section on English and Logical reasoning, thus becoming a complete analysis of a candidate’s intelligence and capability.</p>
+	</div>
+	<div class="col-md-3"></div>
+	</div>
+	</div>
+	<div id="third" class="tabContent">
+	<div class="row">
+	<div class="col-md-9"><span style="color: green; font-size:30px">*</span><b>BITS ID number</b><br>
+    <input type="text" name="midn" id="Memid" class="mem2">
+	<p style="color:blue">Our commitment to transparency and stress on equal opportunity has been a key contributing factor behind our emergence as an institute of national repute, our rigorous intake process rewards only merit and ensures that only truly motivated students join us.
+</p>
+	</div>
+		<div class="col-md-3"></div>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-6">
+	<p style="padding-top:20px">By continuing, I agree to the BITS <a href = blah.aspx">Online Services and BITS Web <br>Confidentiality Agreement.</a><br><br>
+    <span><input type="submit" value=" &rarr; Continue "  style="font-size:18pt;color:white;background-color:#006600;border:2px solid #336600; border-radius: 15px; padding:10px ;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); cursor: pointer;">
+    </form>&nbsp;
+	<a href = "cancel.php" style="margin-left: 50px;">Cancel</a></span><br><br>
+	<a href = "users.php">I'm having problems with your site, What should I do? </a>
+</div>
+<div class="col-md-2"></div>
+ <div class="col-md-4" >
+<p style="font-family: Brush Script MT;font-weight:normal;font-size:200%">Need help finding your member ID?</p>
+    
+	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="https://quotes.values.com/quote_artwork/3763/medium/20170116_monday_quote.jpg" alt="Los Angeles" style="width:100%;">
+        
+      </div>
+
+      <div class="item">
+        <img src="http://www.keepinspiring.me/wp-content/uploads/2015/11/29.jpg" alt="Chicago" style="width:100%;">
+        
+      </div>
+    
+      <div class="item">
+        <img src="http://www.keepinspiring.me/wp-content/uploads/2015/11/82.jpg" alt="New York" style="width:100%;">
+             
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+</div>
+<script>
+	document.getElementById("defaultOpen").click();
+</script>
+ <hr/>
+ <nav class="navbar navbar-inverse navbar-bottom>
+  <div class="navbar-collapse" id="mybottombar">
+                    <ul class="nav navbar-nav navbar-center">
+                        <li><a href="signup.php"><span class="glyphicon glyphicon-cog"></span> Made by Honnesh Rohmetra</a></li>
+                    </ul>
+                </div>
+ </body>
+</html>
